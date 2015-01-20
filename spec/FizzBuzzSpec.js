@@ -52,6 +52,11 @@ describe("FizzBuzz", function() {
       expect(fizzbuzz.says(7)).toBe(7);
     });
 
+    it("fizzbuzz", function() {
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.says(15)).toBe('fizzbuzz');
+    });
+
 
 
 
