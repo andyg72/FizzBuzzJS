@@ -1,26 +1,23 @@
 var FizzBuzz = function() {}; // declare class (which don't exist in Javascript)
 
-FizzBuzz.prototype.isDivisibleByThree = function(number){ // prototype means that the method belongs to the class
-  return (number % 3 === 0);
-};
+FizzBuzz.prototype.isDivisibleBy = function(divisor, number){
 
-FizzBuzz.prototype.isDivisibleByFive = function(number){
-
-  return (number % 5 === 0);
+  return number % divisor === 0;
 
 };
 
 FizzBuzz.prototype.says = function(number){
-    if (this.isDivisibleByThree(number) === true && this.isDivisibleByFive(number) === true) {
+    if (this.isDivisibleBy(3, number) === true && this.isDivisibleBy(5, number) === true) {
       return 'fizzbuzz';
     }
-    else if (this.isDivisibleByThree(number) === true) {
+    else if (this.isDivisibleBy(3, number) === true) {
       return 'fizz';
     }
-    else if(this.isDivisibleByFive(number) === true){
+    else if(this.isDivisibleBy(5, number) === true){
       return 'buzz';
     }
     else {
       return number;
     }
 };
+
