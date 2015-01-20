@@ -47,6 +47,13 @@ describe("FizzBuzz", function() {
 
     });
 
+    it("neither fizz nor buzz", function(){
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.says(7)).toBe(7);
+    });
+
+
+
 
   });
 
