@@ -7,8 +7,6 @@ describe("FizzBuzz", function() {
 
     it("is divisible by 3", function() {
       fizzbuzz = new FizzBuzz();
-      //fizzbuzz = FizzBuzz.new
-
       expect(fizzbuzz.isDivisibleBy(3, 3)).toBe(true); //expect it to return a boolean
 
     });
@@ -36,7 +34,6 @@ describe("FizzBuzz", function() {
 
     it("fizz", function() {
       fizzbuzz = new FizzBuzz();
-
       expect(fizzbuzz.says(3)).toBe('fizz');
 
     });
