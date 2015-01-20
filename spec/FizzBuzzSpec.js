@@ -41,6 +41,12 @@ describe("FizzBuzz", function() {
 
     });
 
+    it("buzz", function() {
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.says(5)).toBe('buzz');
+
+    });
+
 
   });
 

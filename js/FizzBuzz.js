@@ -10,8 +10,13 @@ FizzBuzz.prototype.isDivisibleByFive = function(number){
 
 };
 
-FizzBuzz.prototype.says = function(){
+FizzBuzz.prototype.says = function(number){
 
-  return 'fizz';
+    if (this.isDivisibleByThree(number) === true) {
+      return 'fizz';
+    }  
+    else {
+      return number;
+    }
 
 };
