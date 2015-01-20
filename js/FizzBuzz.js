@@ -9,3 +9,9 @@ FizzBuzz.prototype.isDivisibleByFive = function(number){
   return (number % 5 === 0);
 
 };
+
+FizzBuzz.prototype.says = function(){
+
+  return 'fizz';
+
+};

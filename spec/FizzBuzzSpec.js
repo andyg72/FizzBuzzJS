@@ -32,6 +32,18 @@ describe("FizzBuzz", function() {
 
   });
 
+  describe("knows when to say", function() {
+
+    it("fizz", function() {
+      fizzbuzz = new FizzBuzz();
+
+      expect(fizzbuzz.says(3)).toBe('fizz');
+
+    });
+
+
+  });
+
 
 
 });
