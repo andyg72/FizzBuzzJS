@@ -14,9 +14,9 @@ FizzBuzz.prototype.says = function(number){
 
     if (this.isDivisibleByThree(number) === true) {
       return 'fizz';
-    }  
+    }
     else {
-      return number;
+      return 'buzz';
     }
 
 };
